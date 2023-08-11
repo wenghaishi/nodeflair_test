@@ -49,7 +49,7 @@ const JobCard = (props) => {
       <div className="flex flex-row overflow-hidden">
         {techstack.map((item, index) => (
           <div key={index}>
-            <JobcardTag item={item} />{" "}
+            <JobcardTag item={item} />
           </div>
         ))}
       </div>
