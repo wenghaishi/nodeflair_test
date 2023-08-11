@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .small-card {
-  height: 184px;
-  width: 427px;
+  /* height: 184px;
+  width: 427px; */
   padding: 20px;
 }

@@ -58,6 +58,26 @@ const jobData = [
     "rating": 4.2,
     "timeAgo": "about 6 hours ago",
     "logoUrl": "https://companieslogo.com/img/orig/GOOG-0ed88f7c.png?t=1633218227",
+  },
+  {
+    "id": 4,
+    "name": "job name",
+    "description": "Fullstack developer",
+    "type": "Contract",
+    "seniority": "Junior",
+    "company": "Google",
+    "category": "Fullstack",
+    "responsibility": [
+      "Responsibility 1",
+      "Responsibility 2",
+      "Responsibility 3"
+    ],
+    "requirements": ["Requirement 1", "Requirement 2", "Requirement 3"],
+    "techstack": ["React", "NodeJS"],
+    "location": "Singapore",
+    "rating": 4.2,
+    "timeAgo": "about 6 hours ago",
+    "logoUrl": "https://companieslogo.com/img/orig/GOOG-0ed88f7c.png?t=1633218227",
   }
 ]
 
