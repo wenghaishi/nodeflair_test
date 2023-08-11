@@ -6,14 +6,14 @@ const jobData = [
     "type": "Contract",
     "seniority": "Junior",
     "company": "Google",
-    "category": "Fullstack",
+    "category": "Frontend",
     "responsibility": [
       "Responsibility 1",
       "Responsibility 2",
       "Responsibility 3"
     ],
     "requirements": ["Requirement 1", "Requirement 2", "Requirement 3"],
-    "techstack": ["React", "Ruby on rails"],
+    "techstack": ["React", "Ruby-on-rails", "Typescript", "Git", "Docker"],
     "location": "Singapore",
     "rating": 4.2,
     "timeAgo": "about 6 hours ago",
@@ -26,14 +26,14 @@ const jobData = [
     "type": "Contract",
     "seniority": "Junior",
     "company": "Google",
-    "category": "Fullstack",
+    "category": "Backend",
     "responsibility": [
       "Responsibility 1",
       "Responsibility 2",
       "Responsibility 3"
     ],
     "requirements": ["Requirement 1", "Requirement 2", "Requirement 3"],
-    "techstack": ["React", "Ruby on rails"],
+    "techstack": ["React", "Ruby-on-rails"],
     "location": "Singapore",
     "rating": 4.2,
     "timeAgo": "about 6 hours ago",
@@ -53,7 +53,7 @@ const jobData = [
       "Responsibility 3"
     ],
     "requirements": ["Requirement 1", "Requirement 2", "Requirement 3"],
-    "techstack": ["React", "Ruby on rails"],
+    "techstack": ["React", "NodeJS"],
     "location": "Singapore",
     "rating": 4.2,
     "timeAgo": "about 6 hours ago",

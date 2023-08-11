@@ -9,9 +9,8 @@ const Jobs = () => {
   const [currentJob, setCurrentJob] = useState()
   return (
     <div className="overflow-x-hidden flex bg-[#f3f2ef]">
-      <Navbar />
-      <div className="flex flex-row mt-16 w-screen mx-4">
-        <div className="flex flex-col w-full">
+      <div className="flex flex-row my-16 w-screen mx-10 max-w-7xl justify-center">
+        <div className="flex flex-col mr-4">
           {jobData.map((job) => (
             <JobCard
               key={job.id}
