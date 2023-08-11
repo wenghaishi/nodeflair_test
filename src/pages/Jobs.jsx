@@ -16,7 +16,7 @@ const Jobs = () => {
     }, 500);
   };
   return (
-    <div className="overflow-x-hidden flex items-center justify-center bg-[#f3f2ef] w-full">
+    <div className=" flex items-center justify-center bg-[#f3f2ef] w-full">
       <div className="flex flex-row my-20 w-full mx-10 max-w-7xl justify-center">
         <div className="flex flex-col mr-4 w-full lg:w-auto">
           {jobData.map((job) => (
@@ -30,7 +30,7 @@ const Jobs = () => {
         {loading ? (
             <Loading />
         ) : (
-          <JobDetailsCard job={currentJob} className="hidden" />
+          <JobDetailsCard job={currentJob} />
         )}
       </div>
     </div>

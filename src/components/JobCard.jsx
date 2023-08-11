@@ -18,7 +18,7 @@ const JobCard = (props) => {
       className="bg-white small-card shadow-md rounded-lg mb-3 flex flex-col w-full hover:shadow-lg hover:-translate-y-1 cursor-pointer transition ease-in-out delay-10"
       onClick={props.changeCurrentJob}
     >
-      <div className="flex flex-row justify-between border-b pb-5 w-full">
+      <div className="flex flex-row justify-between border-b pb-4 w-full">
         <div className="w-full flex flex-row">
 
           {/* Company logo */}
@@ -50,7 +50,7 @@ const JobCard = (props) => {
       </div>
 
       {/* Identifier tags section */}
-      <div className="flex flex-row overflow-hidden">
+      <div className="flex flex-row overflow-hidden items-center my-1">
         {techstack.map((item, index) => (
           <div className="px-2 py-1 m-2 rounded-md whitespace-nowrap bg-slate-200" key={index}>
             {item}
