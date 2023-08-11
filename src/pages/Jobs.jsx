@@ -1,18 +1,20 @@
-import Navbar from "../components/Navbar";
 import JobDetailsCard from "../components/JobDetailsCard";
 import JobCard from "../components/JobCard";
 import { useState } from "react";
-import jobData from "../../jobData"
-
+import jobData from "../../jobData";
+import Loading from "../components/Loading";
 
 const Jobs = () => {
-  const [currentJob, setCurrentJob] = useState(jobData[0])
+  const [currentJob, setCurrentJob] = useState(jobData[0]);
+  const [loading, setLoading] = useState(false);
 
-  const changeCurrentJob = (e) => {
-    console.log(e)
-    console.log(e.target)
-    console.log(e.target.value)
-  }
+  const changeCurrentJob = (job) => {
+    setLoading(true);
+    setTimeout(() => {
+      setCurrentJob(job);
+      setLoading(false);
+    }, 500);
+  };
   return (
     <div className="overflow-x-hidden flex items-center justify-center bg-[#f3f2ef] w-full">
       <div className="flex flex-row my-20 w-full mx-10 max-w-7xl justify-center">
@@ -21,11 +23,15 @@ const Jobs = () => {
             <JobCard
               key={job.id}
               job={job}
-              changeCurrentJob={changeCurrentJob}
+              changeCurrentJob={() => changeCurrentJob(job)}
             />
           ))}
         </div>
-        <JobDetailsCard job={currentJob} className="hidden"/>
+        {loading ? (
+            <Loading />
+        ) : (
+          <JobDetailsCard job={currentJob} className="hidden" />
+        )}
       </div>
     </div>
   );
