@@ -1,4 +1,3 @@
-import JobCardTag from "./JobcardTag";
 const JobCard = (props) => {
   const {
     description,
@@ -47,8 +46,8 @@ const JobCard = (props) => {
 
       <div className="flex flex-row overflow-hidden">
         {techstack.map((item, index) => (
-          <div key={index}>
-            <JobCardTag item={item} />
+          <div className="px-2 py-1 m-2 rounded-md whitespace-nowrap bg-slate-200" key={index}>
+            {item}
           </div>
         ))}
       </div>
