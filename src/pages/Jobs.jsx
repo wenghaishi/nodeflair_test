@@ -8,7 +8,7 @@ import jobData from "../../jobData"
 const Jobs = () => {
   const [currentJob, setCurrentJob] = useState()
   return (
-    <div className="overflow-x-hidden flex">
+    <div className="overflow-x-hidden flex bg-[#f3f2ef]">
       <Navbar />
       <div className="flex flex-row mt-16 w-screen mx-4">
         <div className="flex flex-col w-full">

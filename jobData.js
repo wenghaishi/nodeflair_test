@@ -2,9 +2,10 @@ const jobData = [
   {
     "id": 1,
     "name": "job name",
-    "description": "this is a job",
+    "description": "Frontend developer",
     "type": "Contract",
     "seniority": "Junior",
+    "company": "Google",
     "category": "Fullstack",
     "responsibility": [
       "Responsibility 1",
@@ -16,14 +17,15 @@ const jobData = [
     "location": "Singapore",
     "rating": 4.2,
     "timeAgo": "about 6 hours ago",
-    "logoUrl": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F5%2F53%2FGoogle_%2522G%2522_Logo.svg%2F2008px-Google_%2522G%2522_Logo.svg.png&tbnid=L7tm4ZMc-wsgTM&vet=12ahUKEwjz5fXmwNOAAxWEmmMGHW8SD2QQMygCegUIARD2AQ..i&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AGoogle_%2522G%2522_Logo.svg&docid=zyZ-ciwRabX18M&w=2008&h=2048&itg=1&q=google%20logo&ved=2ahUKEwjz5fXmwNOAAxWEmmMGHW8SD2QQMygCegUIARD2AQ",
+    "logoUrl": "https://companieslogo.com/img/orig/GOOG-0ed88f7c.png?t=1633218227",
   },
   {
     "id": 2,
     "name": "job name",
-    "description": "this is a job",
+    "description": "Backend developer",
     "type": "Contract",
     "seniority": "Junior",
+    "company": "Google",
     "category": "Fullstack",
     "responsibility": [
       "Responsibility 1",
@@ -35,14 +37,15 @@ const jobData = [
     "location": "Singapore",
     "rating": 4.2,
     "timeAgo": "about 6 hours ago",
-    "logoUrl": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F5%2F53%2FGoogle_%2522G%2522_Logo.svg%2F2008px-Google_%2522G%2522_Logo.svg.png&tbnid=L7tm4ZMc-wsgTM&vet=12ahUKEwjz5fXmwNOAAxWEmmMGHW8SD2QQMygCegUIARD2AQ..i&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AGoogle_%2522G%2522_Logo.svg&docid=zyZ-ciwRabX18M&w=2008&h=2048&itg=1&q=google%20logo&ved=2ahUKEwjz5fXmwNOAAxWEmmMGHW8SD2QQMygCegUIARD2AQ",
+    "logoUrl": "https://companieslogo.com/img/orig/GOOG-0ed88f7c.png?t=1633218227",
   },
   {
     "id": 3,
     "name": "job name",
-    "description": "this is a job",
+    "description": "Fullstack developer",
     "type": "Contract",
     "seniority": "Junior",
+    "company": "Google",
     "category": "Fullstack",
     "responsibility": [
       "Responsibility 1",
@@ -54,7 +57,7 @@ const jobData = [
     "location": "Singapore",
     "rating": 4.2,
     "timeAgo": "about 6 hours ago",
-    "logoUrl": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F5%2F53%2FGoogle_%2522G%2522_Logo.svg%2F2008px-Google_%2522G%2522_Logo.svg.png&tbnid=L7tm4ZMc-wsgTM&vet=12ahUKEwjz5fXmwNOAAxWEmmMGHW8SD2QQMygCegUIARD2AQ..i&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AGoogle_%2522G%2522_Logo.svg&docid=zyZ-ciwRabX18M&w=2008&h=2048&itg=1&q=google%20logo&ved=2ahUKEwjz5fXmwNOAAxWEmmMGHW8SD2QQMygCegUIARD2AQ",
+    "logoUrl": "https://companieslogo.com/img/orig/GOOG-0ed88f7c.png?t=1633218227",
   }
 ]
 
