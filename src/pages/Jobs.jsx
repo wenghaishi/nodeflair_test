@@ -23,18 +23,19 @@ const Jobs = () => {
 
   // Changing current page for pagination
   const nextPage = () => {
-    const theNextPage = currentPage + 1;
-    setCurrentPage(theNextPage);
-    setCurrentPageJobs(jobData.slice((theNextPage - 1) * 12, theNextPage * 12));
+    if (currentPage + 1 <= pages) {
+      const theNextPage = currentPage + 1;
+      setCurrentPage(theNextPage);
+      setCurrentPageJobs(
+        jobData.slice((theNextPage - 1) * 12, theNextPage * 12)
+      );
+    }
   };
 
   const previousPage = () => {
-    const thePreviousPage = currentPage - 1;
-    setCurrentPage(thePreviousPage);
-    setCurrentPageJobs(
-      jobData.slice((thePreviousPage - 1) * 12, thePreviousPage * 12)
-    );
-    if (thePreviousPage >= 1) {
+    if (1 <= currentPage - 1) {
+      const thePreviousPage = currentPage - 1;
+      setCurrentPage(thePreviousPage);
       setCurrentPageJobs(
         jobData.slice((thePreviousPage - 1) * 12, thePreviousPage * 12)
       );
