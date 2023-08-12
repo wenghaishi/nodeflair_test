@@ -21,7 +21,7 @@ const Jobs = () => {
     }, 500);
   };
 
-  // Changing current page
+  // Changing current page for pagination
   const nextPage = () => {
     const theNextPage = currentPage + 1;
     setCurrentPage(theNextPage);
