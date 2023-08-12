@@ -32,7 +32,7 @@ const JobCard = (props) => {
             </span>
             <h2 className="text-xl font-semibold">{description}</h2>
             <div className="flex flex-row items-center">
-              <span className="mr-2 text-green-500 font-semibold tracking-tighter ">
+              <span className="mr-2 text-green-500 font-semibold text-sm tracking-tighter ">
                 {timeAgo}
               </span>
               <img src="pin.svg" alt="pin icon" className="h-3 w-3 mr-1" />
