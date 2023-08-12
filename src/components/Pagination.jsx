@@ -13,7 +13,7 @@ const Pagination = ({ pages, currentPage, nextPage, previousPage }) => {
       </p>
       <div className="flex flex-row mt-2">
         <button
-          className="bg-green-200 px-2 rounded-lg mr-3"
+          className="bg-green-200 px-2 rounded-lg mr-2"
           onClick={previousPage}
         >
           &lt;
@@ -21,7 +21,7 @@ const Pagination = ({ pages, currentPage, nextPage, previousPage }) => {
         {pageNumbers.map((page, index) => (
           <p
             key={index}
-            className={`mx-2 px-2 ${page === currentPage ? " bg-green-300" : ""}`}
+            className={`mr-2 px-2 ${page === currentPage ? " bg-green-300" : ""}`}
           >
             {page}
           </p>

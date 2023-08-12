@@ -15,7 +15,7 @@ const JobCard = (props) => {
 
   return (
     <div
-      className="bg-white small-card shadow-md rounded-lg mb-3 flex flex-col w-full hover:shadow-lg hover:-translate-y-1 cursor-pointer transition ease-in-out delay-10"
+      className="bg-white small-card shadow-md rounded-lg mb-3 flex flex-col min-w-[417px] lg:w-[417px] hover:shadow-lg hover:-translate-y-1 cursor-pointer transition ease-in-out delay-10"
       onClick={props.changeCurrentJob}
     >
       <div className="flex flex-row justify-between border-b pb-4 w-full">

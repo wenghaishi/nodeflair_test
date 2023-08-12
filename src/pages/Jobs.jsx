@@ -12,6 +12,7 @@ const Jobs = () => {
   const [pages, setPages] = useState(Math.ceil(jobData.length / 12));
   const [currentPage, setCurrentPage] = useState(1);
 
+  // changing info of jobDetailsdCard
   const changeCurrentJob = (job) => {
     setLoading(true);
     setTimeout(() => {
@@ -20,7 +21,7 @@ const Jobs = () => {
     }, 500);
   };
 
-  // pagination
+  // Changing current page
   const nextPage = () => {
     const theNextPage = currentPage + 1;
     setCurrentPage(theNextPage);

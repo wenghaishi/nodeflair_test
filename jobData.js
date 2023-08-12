@@ -42,7 +42,7 @@ const jobData = [
   {
     "id": 3,
     "name": "job name",
-    "description": "Fullstack developer",
+    "description": "Tech Lead (Fullstack development)",
     "type": "Contract",
     "seniority": "Junior",
     "company": "Google",
@@ -181,7 +181,7 @@ const jobData = [
   },  {
     "id": 10,
     "name": "job name",
-    "description": "Android developer",
+    "description": "Android developer 2",
     "type": "Contract",
     "seniority": "Junior",
     "company": "Google",
@@ -201,7 +201,7 @@ const jobData = [
   {
     "id": 11,
     "name": "job name",
-    "description": "Android developer",
+    "description": "Android developer 3",
     "type": "Contract",
     "seniority": "Junior",
     "company": "Google",
@@ -221,7 +221,7 @@ const jobData = [
   {
     "id": 12,
     "name": "job name",
-    "description": "Android developer",
+    "description": "Android developer 4",
     "type": "Contract",
     "seniority": "Junior",
     "company": "Google",
@@ -241,7 +241,7 @@ const jobData = [
   {
     "id": 13,
     "name": "job name",
-    "description": "Android developer",
+    "description": "Android developer 5",
     "type": "Contract",
     "seniority": "Junior",
     "company": "Google",
@@ -261,7 +261,7 @@ const jobData = [
   {
     "id": 14,
     "name": "job name",
-    "description": "Android developer",
+    "description": "Android developer 6",
     "type": "Contract",
     "seniority": "Junior",
     "company": "Google",
@@ -281,7 +281,7 @@ const jobData = [
   {
     "id": 15,
     "name": "job name",
-    "description": "Android developer",
+    "description": "Android developer 7",
     "type": "Contract",
     "seniority": "Junior",
     "company": "Google",
