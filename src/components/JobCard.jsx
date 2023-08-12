@@ -20,7 +20,6 @@ const JobCard = (props) => {
     >
       <div className="flex flex-row justify-between border-b pb-4 w-full">
         <div className="w-full flex flex-row">
-
           {/* Company logo */}
           <img src={logoUrl} alt="company logo" className="h-11 w-11" />
 
@@ -42,7 +41,6 @@ const JobCard = (props) => {
           </div>
         </div>
 
-
         {/* Category tag */}
         <div className="bg-green-200 py-1 px-2 font-semibold text-green-600 h-8 rounded-md">
           {category}
@@ -52,7 +50,10 @@ const JobCard = (props) => {
       {/* Identifier tags section */}
       <div className="flex flex-row overflow-hidden items-center my-1">
         {techstack.map((item, index) => (
-          <div className="px-2 py-1 m-2 rounded-md whitespace-nowrap bg-slate-200" key={index}>
+          <div
+            className="px-2 py-1 m-2 rounded-md whitespace-nowrap bg-slate-200"
+            key={index}
+          >
             {item}
           </div>
         ))}

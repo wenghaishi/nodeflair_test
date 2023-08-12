@@ -5,7 +5,6 @@ const Pagination = ({ pages, currentPage, nextPage, previousPage }) => {
     pageNumbers.push(i);
   }
 
-
   return (
     <div className="flex items-center flex-col">
       <p>
@@ -21,7 +20,9 @@ const Pagination = ({ pages, currentPage, nextPage, previousPage }) => {
         {pageNumbers.map((page, index) => (
           <p
             key={index}
-            className={`mr-2 px-2 ${page === currentPage ? " bg-green-300" : ""}`}
+            className={`mr-2 px-2 ${
+              page === currentPage ? " bg-green-300" : ""
+            }`}
           >
             {page}
           </p>
