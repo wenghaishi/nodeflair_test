@@ -8,8 +8,9 @@ import Pagination from "../components/Pagination";
 const Jobs = () => {
   const [currentJob, setCurrentJob] = useState(jobData[0]);
   const [loading, setLoading] = useState(false);
-  const [currentPageJobs, setCurrentPageJobs] = useState(jobData.slice(0,12))
-  const [pages, setPages] = useState(Math.ceil(jobData.length / 12))
+  const [currentPageJobs, setCurrentPageJobs] = useState(jobData.slice(0, 12));
+  const [pages, setPages] = useState(Math.ceil(jobData.length / 12));
+  const [currentPage, setCurrentPage] = useState(1);
 
   const changeCurrentJob = (job) => {
     setLoading(true);
@@ -18,6 +19,27 @@ const Jobs = () => {
       setLoading(false);
     }, 500);
   };
+
+  // pagination
+  const nextPage = () => {
+    const theNextPage = currentPage + 1;
+    setCurrentPage(theNextPage);
+    setCurrentPageJobs(jobData.slice((theNextPage - 1) * 12, theNextPage * 12));
+  };
+
+  const previousPage = () => {
+    const thePreviousPage = currentPage - 1;
+    setCurrentPage(thePreviousPage);
+    setCurrentPageJobs(
+      jobData.slice((thePreviousPage - 1) * 12, thePreviousPage * 12)
+    );
+    if (thePreviousPage >= 1) {
+      setCurrentPageJobs(
+        jobData.slice((thePreviousPage - 1) * 12, thePreviousPage * 12)
+      );
+    }
+  };
+
   return (
     <div className=" flex items-center justify-center bg-[#f3f2ef] w-full">
       <div className="flex flex-row my-20 w-full mx-36 max-w-7xl justify-center">
@@ -29,13 +51,14 @@ const Jobs = () => {
               changeCurrentJob={() => changeCurrentJob(job)}
             />
           ))}
-          <Pagination pages={pages}/>
+          <Pagination
+            pages={pages}
+            currentPage={currentPage}
+            nextPage={nextPage}
+            previousPage={previousPage}
+          />
         </div>
-        {loading ? (
-            <Loading />
-        ) : (
-          <JobDetailsCard job={currentJob} />
-        )}
+        {loading ? <Loading /> : <JobDetailsCard job={currentJob} />}
       </div>
     </div>
   );
